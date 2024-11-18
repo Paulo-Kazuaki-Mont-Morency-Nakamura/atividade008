@@ -1,18 +1,20 @@
-class department():
-    def __init__(self):
-        self.list = []
+class department:
+    def __init__(self, name):
+        self.name = name
+        self.teachers = []
 
-        def add_department(dept_name):
-            self.list.append(dept_name)
-            print(f"Departamento {dept_name} adicionado com sucesso!")
+    def add_teacher(self, teacher):
+        self.teachers.append(teacher)
+        print(f"Professor {teacher.name} adicionado com sucesso!")
 
-        def remove_department(dept_name):
-            if dpet_name in self.list:
-                self.list.remove(dept_name)
+    def list_names(self):
+        for teacher in self.teachers:
+            print(f"> {teacher.name}, {teacher.age} anos.")
+
+    def remove_teacher(self, teacher_name):
+        for teacher in self.teachers:
+            if teacher.name == teacher_name:
+                self.teachers.remove(teacher)
+                print(f"Professor {teacher.name} removido com sucesso!")
             else:
-                print("Departamento não encontrado.")
-
-        def list_departments():
-            return self.list
-
-        self.teacher = []
+                print(f"Professor {teacher.name} não encontrado.")
