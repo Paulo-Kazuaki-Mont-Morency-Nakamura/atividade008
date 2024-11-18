@@ -3,11 +3,13 @@ class department:
         self.name = name
         self.teachers = []
 
+    def list_name(self):
+        print(f"- {self.name}")
+
     def add_teacher(self, teacher):
         self.teachers.append(teacher)
-        print(f"Professor {teacher.name} adicionado com sucesso!")
 
-    def list_names(self):
+    def list_teachers(self):
         for teacher in self.teachers:
             print(f"> {teacher.name}, {teacher.age} anos.")
 

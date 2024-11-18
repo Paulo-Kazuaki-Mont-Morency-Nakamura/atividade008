@@ -19,7 +19,6 @@ class university:
             print(f"- {teacher.name}")
 
     def append_deparment(self, department):
-        print(f'Adicionando departemaneto {department.name}')
         self.departments.append(department)
 
     def remove_deparment(self, department):

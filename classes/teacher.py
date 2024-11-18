@@ -3,7 +3,6 @@ class teacher:
         self.name = name
         self.age = age
         self.discipline_list = []
-        self.names_list = []
 
 
     def add_discipline(self, discipline):
@@ -14,11 +13,8 @@ class teacher:
         for discipline in self.discipline_list:
             print(f"- {discipline.name}")
 
-    def list_names(self, name):
-        self.names_list.append(name)
-
-    def remove_teacher(self, teacher_name):
-        if teacher_name in self.names_list:
-            self.names_list.remove(teacher_name)
+    def remove_discipline(self, discipline_name):
+        if discipline_name in self.discipline_list:
+            self.discipline_list.remove(discipline_name)
         else:
-            print("Professor não encontrado.")
+            print(f"Disciplina {discipline_name} não encontrado.")
