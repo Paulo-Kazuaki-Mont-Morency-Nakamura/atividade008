@@ -1,7 +1,8 @@
-from classes import universisdade
-from classes import departamento
-from classes import professor
-from classes import disciplina
+from classes import university
+from classes import department
+from classes import teacher
+from classes import discipline
 
 def main():
-    print("- Departamentos em faculdade -")
+    print("- Departamentos em faculdade -\n")
+    list_departments()
