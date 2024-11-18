@@ -1,13 +1,9 @@
-class department(university):
+class department():
     def __init__(self):
-        self.list = {
-            'Ciências Biológicas',
-            'Ciências Humanas',
-            'Ciências Exatas'
-        }
+        self.list = []
 
         def add_department(dept_name):
-            self.list.add(dept_name)
+            self.list.append(dept_name)
             print(f"Departamento {dept_name} adicionado com sucesso!")
 
         def remove_department(dept_name):
